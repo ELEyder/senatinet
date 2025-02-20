@@ -1,6 +1,5 @@
 @import url('comment.css');
 
-
 section.posts {
     width: 460px;
     display: flex;
@@ -10,6 +9,7 @@ section.posts {
     margin: 20px;
     gap: 20px;
 }
+
 form.postear {
     width: 460px;
     padding: 20px;
@@ -20,8 +20,8 @@ form.postear {
     justify-content: center;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 1px;
 }
+
 input.content {
     background-color: white ;
     width: 100%;
@@ -33,13 +33,16 @@ input.content {
     color: black;
     outline: #909296;
 }
+
 input.content:hover, 
 input.content:focus {
     background-color: var(--white-secondary) ;
 }
+
 input.content::placeholder {
     color: var(--color-placeholder);
 }
+
 .postear-option{
     width: 100%;
     margin: 10px 0 0 0;
@@ -48,6 +51,7 @@ input.content::placeholder {
     align-items: center;
     flex-grow: inherit;
 }
+
 input.media {
     width: 0.1px;
     height: 0.1px;
@@ -86,6 +90,7 @@ button.postear:hover {
     color: white;
     background-color: var(--color-primary);
 }
+
 /* ------------------------------------------------------------- POSTS ------------------------------------------------------------- */
 
 div.post {
@@ -93,21 +98,24 @@ div.post {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 1px;
 }
+
 a {
     text-decoration: none;
     color: var(--color-dark);
     font-size: 14px;
 }
+
 a.author-name {
     color: var(--color-primary);
 }
+
 div.post-header{
     padding: 15px;
     display: flex;
     align-items: center;
 }
+
 p.post{
     font-size: 14px;
 }
@@ -115,12 +123,15 @@ p.post{
 div.post-main{
     padding: 0px 15px 15px 15px;
 }
+
 div.post-media {
     display: flex;
 }
+
 .media {
     width: 100%;
 }
+
 .post-options {
     display: flex;
     align-items: center;
@@ -143,6 +154,7 @@ p.content {
     white-space: nowrap;
     user-select: none;
 }
+
 .btn-post-option:hover,
 .btn-post-option:focus {
     background-color: var(--white-secondary);

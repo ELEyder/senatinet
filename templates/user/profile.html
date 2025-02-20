@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/root.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/user/profile.css' %}">
     <link rel="stylesheet" href="{% static 'css/post/post.css' %}">
@@ -24,6 +25,9 @@
             </div>
             <div class="my-friends">
                 <h1>Friends</h1>
+                {% if not friends %}
+                    <p>No tienes amigos...</p>
+                {% endif %}
                 {% for friend in friendsData %}
                 <a class="friend" href="{% url 'viewUser' username=friend.username %}">
                     <div class="friend">

@@ -10,7 +10,7 @@ function like(button){
     button.setAttribute('likes', likes);
     button.innerText = `Likes: ${likes}`;
     const dominioBase = window.location.origin;
-	fetch(`${dominioBase}/post/like/${idPost}`)
+	fetch(`${dominioBase}/posts/like/${idPost}`)
 	return false;
 }
 
