@@ -1,6 +1,6 @@
 .env
 db.sqlite3
-/config
+/config/firebase.json
 /venv
 /senatiweb/__pycache__
 /postapp/__pycache__

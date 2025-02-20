@@ -1,0 +1,14 @@
+{
+  "TEMP": "Consigue tu firebase_credencial.json en: console.firebase.google.com/",
+  "type": "example",
+  "project_id": "example",
+  "private_key_id": "example",
+  "private_key": "example",
+  "client_email": "example",
+  "client_id": "example",
+  "auth_uri": "example",
+  "token_uri": "example",
+  "auth_provider_x509_cert_url": "example",
+  "client_x509_cert_url": "example",
+  "universe_domain": "example"
+}

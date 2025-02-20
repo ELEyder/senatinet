@@ -2,13 +2,11 @@ SENATINET
 
 1. Abrir un entorno virtual
 python -m venv venv
+./venv/scripts/activate
 
-2. Instalar los requerimientos
-pip install -r requirements.txt
+2. Crear archivo .env siguiendo el ejemplo en .env.example
 
-3. Crear archivo .env siguiendo el ejemplo en .env.example
-
-4. Iniciar el servidor
+3. Iniciar el servidor
 python manage.py runserver
 
 - Otros
