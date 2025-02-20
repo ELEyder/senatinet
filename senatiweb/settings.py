@@ -151,3 +151,6 @@ firebase_admin.initialize_app(cred)
 
 #Peso Archivos CACHE
 FILE_UPLOAD_MAX_MEMORY_SIZE = 15728640
+
+SESSION_COOKIE_SECURE = True  # Solo enviar cookies por HTTPS
+SESSION_COOKIE_HTTPONLY = True  # Proteger contra ataques XSS
