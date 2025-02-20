@@ -1,4 +1,5 @@
 .env
+*.sqlite3
 db.sqlite3
 /config/firebase.json
 /venv
