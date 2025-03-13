@@ -10,10 +10,9 @@
             <input class="logo" type="text" placeholder="Search in Senatinet">
         </div>
     <div class="info-user">
-        <a href="{% url 'viewUser' username=userLogin.username %}">
-            <div class="avatar-icon">
-                <img src="{{ userLogin.urlAvatar }}" alt="avatar" class="avatar-icon">
-            </div>
+        <a href="{% url 'viewUser' username=userLogin.username %}" class="avatar-icon">
+                <img src="{{ userLogin.urlAvatar }}" alt="avatar" class="avatar-icon"
+                    onerror="this.onerror=null; this.src='/media/avatars/0.jpg';">
          </a>
         <div class="text-user">
             <p class="user name">{{userLogin.firstName}} {{userLogin.lastName}}</p>

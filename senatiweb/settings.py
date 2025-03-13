@@ -144,10 +144,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #FIRESTORE
-firebase_credentials_path = os.path.join(BASE_DIR, 'config', 'firebase.json')
+if not firebase_admin._apps:
+    firebase_credentials_path = os.path.join(BASE_DIR, 'config', 'firebase.json')
 
-cred = credentials.Certificate(firebase_credentials_path)
-firebase_admin.initialize_app(cred)
+    cred = credentials.Certificate(firebase_credentials_path)
+    firebase_admin.initialize_app(cred)
 
 #Peso Archivos CACHE
 FILE_UPLOAD_MAX_MEMORY_SIZE = 15728640
